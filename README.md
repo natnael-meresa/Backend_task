@@ -14,12 +14,6 @@ Before you begin, ensure you have the following installed:
 
 - PostgreSQL: Follow the steps outlined in the [Prisma PostgreSQL Setup Guide](https://www.prisma.io/dataguide/postgresql/setting-up-a-local-postgresql-database) to install and configure PostgreSQL.
 
-
-
-### Optional: Use SQLite (In-memory)
-
-If you encounter issues with PostgreSQL installation or prefer an in-memory database, you can use SQLite by switching to the `In_memory` branch of this repository. SQLite is a self-contained, serverless, and zero-configuration SQL database engine.
-
 ### Setting Up PostgreSQL and Creating a Database
 
 #### For Linux:
@@ -87,7 +81,12 @@ After creating the database, you'll need to update the connection string in your
 - `Database`: Replace with the name of the database you created.
 - `Username`: Replace with the username you created.
 - `Password`: Replace with the password for the username.
-  
+
+
+### Optional: Use SQLite (In-memory)
+
+If you encounter issues with PostgreSQL installation or prefer an in-memory database, you can use SQLite by switching to the `In_memory` branch of this repository. SQLite is a self-contained, serverless, and zero-configuration SQL database engine.
+
 ### Managing Packages
 
 In case you encounter issues with package installation or need to manually install a package, you have a couple of options:
