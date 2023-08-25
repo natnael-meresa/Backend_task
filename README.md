@@ -68,6 +68,17 @@ Before you begin, ensure you have the following installed:
 
    Replace `your_database_name` with the desired name of your database.
 
+### To migrate the models to database:
+ ```install dotnet-ef
+   dotnet tool install --global dotnet-ef
+   ```
+```migrate 
+   dotnet ef migrations add "initial migration"
+   ```
+```update database 
+   dotnet ef database update 
+   ```
+
 ### Update Connection String
 
 After creating the database, you'll need to update the connection string in your application's configuration to point to your PostgreSQL database. Locate the connection string in your project (typically in the `appsettings.json` or `appsettings.Development.json` file) and modify it like this:
